@@ -1,0 +1,110 @@
+using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace ExecuteAutomation_1
+{
+    class Program
+    {
+       // IWebPropertiesCollection.driver PropertiesCollection.driver = new ChromePropertiesCollection.driver();
+
+        static void Main(String[] args)
+        {
+
+        }
+
+        [SetUp]
+        public void Initialize()
+        {
+
+            PropertiesCollection.driver = new ChromeDriver();
+ 
+            //Navigate to Execute automation demo page
+            PropertiesCollection.driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
+            Console.WriteLine("Opened URL");
+
+            Thread.Sleep(5000);
+        }
+
+
+        [Test]
+        public void ExecuteTest()
+        {
+            // Automation Script with page Object Modelling
+            //Initial the page by calling its reference
+
+            
+            LoginPage login = new LoginPage();
+
+           EAPageObjects page = login.Login("Automation", "Execute");
+
+            page.FillUserForm("ME", "Mitchel", "Adigwe");
+
+           
+
+            
+
+
+         /*   
+          *   // Automation Script
+          *   
+          *   //Find the Element
+            IWebElement element = PropertiesCollection.driver.FindElement(By.XPath("//form[@id='userName']//input[@name='UserName']"));
+
+            //Perform Ops
+            element.SendKeys("Execute");
+
+            Console.WriteLine("Inserted UserName");
+
+            IWebElement pass = PropertiesCollection.driver.FindElement(By.XPath("//form[@id='userName']//input[@name='Password']"));
+            pass.SendKeys("Automation");
+
+            Console.WriteLine("Inserted Password");
+
+            IWebElement login = PropertiesCollection.driver.FindElement(By.XPath("//form[@id='userName']//input[@name='Login']"));
+
+            login.Click();
+
+            Thread.Sleep(5000);
+       
+            SeleniumSetMethods.SelectDropDown("Mr." ,"TitleId", PropertyType.Id);
+
+            SeleniumSetMethods.EnterText("Initial", "ME", PropertyType.Name);
+
+            SeleniumSetMethods.EnterText("FirstName", "Mitchel", PropertyType.Id);
+
+            Console.WriteLine("My Title: " + SeleniumGetMethods.GetTextFroDDL("TitleId", PropertyType.Id));
+
+            Console.WriteLine("My Initial is: " + SeleniumGetMethods.GetText("Initial", PropertyType.Name));
+
+            SeleniumSetMethods.EnterText("MiddleName", "Adigwe", PropertyType.Id);
+
+            SeleniumSetMethods.Click("Male", PropertyType.Name);
+
+            SeleniumSetMethods.Click("Hindi", PropertyType.Name);
+
+            SeleniumSetMethods.Click("Save", PropertyType.Name );
+
+    */
+
+            Thread.Sleep(2000);
+        }
+
+        [TearDown]
+        public void CleanUp()
+        {
+
+            Thread.Sleep(2500);
+            PropertiesCollection.driver.Close();
+            Console.WriteLine("Closed the browser");
+        }
+
+    }
+}
+

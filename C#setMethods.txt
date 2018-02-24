@@ -1,0 +1,71 @@
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ExecuteAutomation_1
+{
+    class SeleniumSetMethods
+    {
+        // Enter Text 
+
+        /*
+                public static void EnterText(string  element, string value, PropertyType elementtype)
+                {
+
+                    if (elementtype == PropertyType.Id)
+                        PropertiesCollection.driver.FindElement(By.Id(element)).SendKeys(value);
+                    if (elementtype == PropertyType.Name) 
+                    PropertiesCollection.driver.FindElement(By.Name(element)).SendKeys(value);
+                    if (elementtype == PropertyType.Xpath)
+                        PropertiesCollection.driver.FindElement(By.XPath(element)).SendKeys(value);
+
+
+                }
+                //Click into a button, checkbox, option
+
+                public static void Click( String element, PropertyType elementtype)
+                {
+                    if (elementtype == PropertyType.Id)
+                        PropertiesCollection.driver.FindElement(By.Id(element)).Click();
+                    if (elementtype == PropertyType.Name)
+                        PropertiesCollection.driver.FindElement(By.Name(element)).Click();
+                    if (elementtype == PropertyType.Xpath)
+                        PropertiesCollection.driver.FindElement(By.XPath(element)).Click();
+                }
+
+                //Selecting a dropdown control
+
+                public static void SelectDropDown(string value, String element, PropertyType elementtype)
+                {
+
+                    if (elementtype == PropertyType.Id)
+                        new SelectElement(PropertiesCollection.driver.FindElement(By.Id(element))).SelectByText(value);
+                    if (elementtype == PropertyType.Name)
+                        new SelectElement(PropertiesCollection.driver.FindElement(By.Name(element))).SelectByText(value);
+                    if (elementtype == PropertyType.Xpath)
+                        new SelectElement(PropertiesCollection.driver.FindElement(By.XPath(element))).SelectByText(value);
+                }
+
+            */
+
+            //Customized for page object modelling
+
+        public static void EnterText(IWebElement element,String value)
+        {
+            element.SendKeys(value);
+        }
+
+        public static void Click(IWebElement element)
+        {
+            element.Click();
+        }
+        public static void SelectDropDown(IWebElement element, String value)
+        {
+            new SelectElement(element).SelectByText(value);
+        }
+    }
+}

@@ -1,0 +1,43 @@
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.PageObjects;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ExecuteAutomation_1
+{
+    class LoginPage
+    {
+        public LoginPage()
+        {
+            PageFactory.InitElements(PropertiesCollection.driver, this);
+        }
+
+        [FindsBy(How = How.XPath, Using = "//form[@id='userName']//input[@name='UserName']")]
+
+        public IWebElement txtUsername { get; set; }
+
+        [FindsBy(How = How.XPath, Using = "//form[@id='userName']//input[@name='Password']")]
+
+        public IWebElement txtpass { get; set; }
+
+        [FindsBy(How = How.XPath, Using = "//form[@id='userName']//input[@name='Login']")]
+
+        public IWebElement btnlogin { get; set; }
+
+        public EAPageObjects Login(String userName, String password)
+        {
+            //Username
+            txtUsername.SendKeys(userName);
+            //Password
+            txtpass.SendKeys(password);
+            btnlogin.Click();
+
+            //Return the page object
+
+            return new EAPageObjects();
+        }
+    }
+}
