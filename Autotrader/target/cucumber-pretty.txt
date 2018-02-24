@@ -1,0 +1,15 @@
+Feature: Search Cars
+  In  order to view different cars for sale
+  as an Autotrader customer
+  I want the ability to search for a car of my choice
+
+  Scenario: Search for Audi cars on homepage search box [90m# features/SearchForACar.feature:6[0m
+    [32mGiven [0m[32mI navigate to Autotrader homepage[0m             [90m# AutotradersearchSteps.NavigateToAutotraderHomepage()[0m
+    [32mAnd [0m[32mAutotrader logo is displayed[0m                    [90m# AutotradersearchSteps.AutotraderlogoIsDisplayed()[0m
+    [32mWhen [0m[32mI enter my postcode[0m                            [90m# AutotradersearchSteps.IEnterMyPostcode()[0m
+    [32mAnd [0m[32mI select a distance from my postcode[0m            [90m# AutotradersearchSteps.ISelectADistanceFromMyPostcode()[0m
+    [32mAnd [0m[32mI select Audi from make dropdown[0m                [90m# AutotradersearchSteps.ISelectAudiFromMakeDropdown()[0m
+    [32mAnd [0m[32mI click search cars button[0m                      [90m# AutotradersearchSteps.IClickSearchCarsButton()[0m
+    [32mThen [0m[32mthe result of the search for Audi is displayed[0m [90m# AutotradersearchSteps.TheResultOfTheSearchForAudiIsDisplayed()[0m
+    [32mAnd [0m[32mall the cars displayed belong only to Audi[0m      [90m# AutotradersearchSteps.AllTheCarsDisplayedBelongOnlyToAudi()[0m
+    [32mAnd [0m[32msearch results page is displayed[0m                [90m# AutotradersearchSteps.SearchResultsPageIsDisplayed()[0m

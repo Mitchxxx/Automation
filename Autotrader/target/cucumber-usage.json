@@ -1,0 +1,164 @@
+[
+  {
+    "source": "^search results page is displayed$",
+    "steps": [
+      {
+        "name": "search results page is displayed",
+        "aggregatedDurations": {
+          "average": 0.000010987,
+          "median": 0.000010987
+        },
+        "durations": [
+          {
+            "duration": 0.000010987,
+            "location": "features/SearchForACar.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the result of the search for Audi is displayed$",
+    "steps": [
+      {
+        "name": "the result of the search for Audi is displayed",
+        "aggregatedDurations": {
+          "average": 0.000011744,
+          "median": 0.000011744
+        },
+        "durations": [
+          {
+            "duration": 0.000011744,
+            "location": "features/SearchForACar.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I select a distance from my postcode$",
+    "steps": [
+      {
+        "name": "I select a distance from my postcode",
+        "aggregatedDurations": {
+          "average": 0.000015753,
+          "median": 0.000015753
+        },
+        "durations": [
+          {
+            "duration": 0.000015753,
+            "location": "features/SearchForACar.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^all the cars displayed belong only to Audi$",
+    "steps": [
+      {
+        "name": "all the cars displayed belong only to Audi",
+        "aggregatedDurations": {
+          "average": 0.000020259,
+          "median": 0.000020259
+        },
+        "durations": [
+          {
+            "duration": 0.000020259,
+            "location": "features/SearchForACar.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I navigate to Autotrader homepage$",
+    "steps": [
+      {
+        "name": "I navigate to Autotrader homepage",
+        "aggregatedDurations": {
+          "average": 20.822929868,
+          "median": 20.822929868
+        },
+        "durations": [
+          {
+            "duration": 20.822929868,
+            "location": "features/SearchForACar.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click search cars button$",
+    "steps": [
+      {
+        "name": "I click search cars button",
+        "aggregatedDurations": {
+          "average": 0.000014135,
+          "median": 0.000014135
+        },
+        "durations": [
+          {
+            "duration": 0.000014135,
+            "location": "features/SearchForACar.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Autotrader logo is displayed$",
+    "steps": [
+      {
+        "name": "Autotrader logo is displayed",
+        "aggregatedDurations": {
+          "average": 0.000015145,
+          "median": 0.000015145
+        },
+        "durations": [
+          {
+            "duration": 0.000015145,
+            "location": "features/SearchForACar.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I enter my postcode$",
+    "steps": [
+      {
+        "name": "I enter my postcode",
+        "aggregatedDurations": {
+          "average": 0.000015425,
+          "median": 0.000015425
+        },
+        "durations": [
+          {
+            "duration": 0.000015425,
+            "location": "features/SearchForACar.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I select Audi from make dropdown$",
+    "steps": [
+      {
+        "name": "I select Audi from make dropdown",
+        "aggregatedDurations": {
+          "average": 0.000014494,
+          "median": 0.000014494
+        },
+        "durations": [
+          {
+            "duration": 0.000014494,
+            "location": "features/SearchForACar.feature:11"
+          }
+        ]
+      }
+    ]
+  }
+]

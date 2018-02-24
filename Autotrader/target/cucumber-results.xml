@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="20.823048">
+<testcase classname="Search Cars" name="Search for Audi cars on homepage search box" time="20.823048">
+<system-out><![CDATA[Given I navigate to Autotrader homepage.....................................passed
+And Autotrader logo is displayed............................................passed
+When I enter my postcode....................................................passed
+And I select a distance from my postcode....................................passed
+And I select Audi from make dropdown........................................passed
+And I click search cars button..............................................passed
+Then the result of the search for Audi is displayed.........................passed
+And all the cars displayed belong only to Audi..............................passed
+And search results page is displayed........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,130 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Search for Audi cars on homepage search box",
+        "description": "",
+        "id": "search-cars;search-for-audi-cars-on-homepage-search-box",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20822929868,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I navigate to Autotrader homepage",
+            "match": {
+              "location": "AutotradersearchSteps.NavigateToAutotraderHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15145,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Autotrader logo is displayed",
+            "match": {
+              "location": "AutotradersearchSteps.AutotraderlogoIsDisplayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15425,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter my postcode",
+            "match": {
+              "location": "AutotradersearchSteps.IEnterMyPostcode()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15753,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I select a distance from my postcode",
+            "match": {
+              "location": "AutotradersearchSteps.ISelectADistanceFromMyPostcode()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14494,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I select Audi from make dropdown",
+            "match": {
+              "location": "AutotradersearchSteps.ISelectAudiFromMakeDropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14135,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click search cars button",
+            "match": {
+              "location": "AutotradersearchSteps.IClickSearchCarsButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11744,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the result of the search for Audi is displayed",
+            "match": {
+              "location": "AutotradersearchSteps.TheResultOfTheSearchForAudiIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20259,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "all the cars displayed belong only to Audi",
+            "match": {
+              "location": "AutotradersearchSteps.AllTheCarsDisplayedBelongOnlyToAudi()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10987,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "search results page is displayed",
+            "match": {
+              "location": "AutotradersearchSteps.SearchResultsPageIsDisplayed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Search Cars",
+    "description": "In  order to view different cars for sale\nas an Autotrader customer\nI want the ability to search for a car of my choice",
+    "id": "search-cars",
+    "keyword": "Feature",
+    "uri": "features/SearchForACar.feature"
+  }
+]
